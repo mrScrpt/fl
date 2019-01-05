@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+}
+.header__title{
+    width: 50%
+}
+
+.header__filter{
+    width: 50%
+}
+
+
+.list{
+    display: flex;
+
+}
+.list__all{
+    width: 33.3333%;
+}
+.list__filter{
+    width: 33.3333%;
+}
+.list__frave{
+    width: 33.3333%;
+}
+
+
+.friends__list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.friends__item{
+    background: #cccccc;
+    border-radius: 4px;
+    margin: 10px 20px;
+    padding: 10px;
+    text-align: center;
+    width: 160px;
+}
+.friend__name{
+    background: #fff;
+}
+.friend__photo{
+    display: block;
+    margin: auto;
+}
+.red{
+    border: red 2px solid;
+}
