@@ -26,8 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
         //Загрузка списка из УРЛ
         let activeListName = worker.getURL('=');
         if(activeListName){
-          let activeList = worker.loadList('local', activeListName);
-          view.renderFriends(activeList, friendFilter, '/fl/index.html');
+          let activeList = worker.loadList('local', activeListName, '/fl/index.html');
+          view.renderFriends(activeList, friendFilter);
         }
 
 
