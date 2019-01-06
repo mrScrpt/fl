@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ,add = document.querySelector('.add');
 
     (async ()=>{
-        await worker.login(6784868, 2);
+        await worker.login(6808614, 2);
         const self = await worker.getSelf();
         let me = worker.getSelfItem(self);
         view.renderMe(me, title);
@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
         let activeListName = worker.getURL('=');
         if(activeListName){
           let activeList = worker.loadList('local', activeListName);
-          view.renderFriends(activeList, friendFilter);
+          view.renderFriends(activeList, friendFilter, '/friendsFilter/');
         }
 
 

@@ -101,9 +101,9 @@ class MyVk {
         }
         return name;
     }
-    loadList(storage, name) {
+    loadList(storage, name, url) {
         let arr = [];
-        if (name === '/') {
+        if (name === url) {
             return;
         } else if (localStorage[name] || sessionStorage[name]) {
             if (storage === "local") {
