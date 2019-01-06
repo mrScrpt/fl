@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
         let activeListName = worker.getURL('=');
         if(activeListName){
           let activeList = worker.loadList('local', activeListName);
-          view.renderFriends(activeList, friendFilter, '/fl/');
+          view.renderFriends(activeList, friendFilter, '/fl/index.html');
         }
 
 
