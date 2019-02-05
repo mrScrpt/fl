@@ -57,6 +57,7 @@ class MyVk {
 		let res = [];
 		let regexp = new RegExp(params, 'i');
 		arr.forEach((item) => {
+			//if (item.first_name.search(regexp) > -1 || item.last_name.search(regexp) > -1) {
 			if (item.first_name.search(regexp) > -1 || item.last_name.search(regexp) > -1) {
 				//console.log(item);
 				res.push(item);
