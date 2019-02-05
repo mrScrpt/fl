@@ -55,10 +55,10 @@ class MyVk {
 
 	filterList(arr, params) {
 		let res = [];
-		let regexp = new RegExp(params, 'i');
+		//let regexp = new RegExp(params, 'i');
 		arr.forEach((item) => {
 			//if (item.first_name.search(regexp) > -1 || item.last_name.search(regexp) > -1) {
-			if (item.first_name.search(regexp) > -1 || item.last_name.search(regexp) > -1) {
+			if (item.first_name.includes(params) || item.last_name.includes(params)) {
 				//console.log(item);
 				res.push(item);
 				return true;
